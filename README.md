@@ -138,44 +138,44 @@ Interactive experience 🎮:
 
 
 ### Inside .venv , perform following :
-
-### Download the Repo
-git clone https://github.com/nprasha76/GenAI
-
-cd philoagents-course/philoagents-api/
-
-pip install -r requirements.txt
-###Install Agents 
-uv pip install external/rootAgentPro
-uv pip install external/savingsAgentPro
-uv pip install external/creditAgentPro
-uv pip install external/autoAgentPro
-uv pip install external/mortgageAgentPro
-uv pip install external/travelAgentPro
-
-
-playwright install
-sudo playwright install-deps
-
-###Install faiss-gpu if you have GPU .Otherwise install faiss-cpu
-
-pip install faiss-cpu
-pi install  faiss-gpu
-
-###Launch FastAPI server
-
-python -m src.philoagents.infrastructure.api
+ ####
+     #Download the Repo
+     git clone https://github.com/nprasha76/GenAI
+    
+     cd philoagents-course/philoagents-api/
+  
+     pip install -r requirements.txt
+     ###Install Agents 
+      uv pip install external/rootAgentPro
+      uv pip install external/savingsAgentPro
+      uv pip install external/creditAgentPro
+      uv pip install external/autoAgentPro
+      uv pip install external/mortgageAgentPro
+      uv pip install external/travelAgentPro
+      
+    
+    playwright install
+    sudo playwright install-deps
+  
+    ###Install faiss-gpu if you have GPU .Otherwise install faiss-cpu
+  
+    pip install  faiss-cpu
+    pip install  faiss-gpu
+    
+    ###Launch FastAPI server
+    
+    python -m src.philoagents.infrastructure.api
 
 ### Run UI 
-#### Open another terminal (outside .venv) 
-
-cd philoagents-course/philoagents-ui
-#Install node 
-https://nodejs.org/en/download
-
-### Launch UI
-npm run dev
-
+ #### 
+  #Open another terminal (outside .venv) 
+   cd philoagents-course/philoagents-ui
+   #Install node 
+   https://nodejs.org/en/download
+  
+   ### Launch UI
+   npm run dev
+  
 
 ###Offline 
 
@@ -219,6 +219,7 @@ npm run dev
 
 
 </p>
+
 
 
 
