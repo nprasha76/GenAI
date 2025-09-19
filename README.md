@@ -140,15 +140,15 @@ source .venv/bin/activate
 
 
 
-# Inside .venv , perform following :
+### Inside .venv , perform following :
 
-#Download the Repo
+###Download the Repo
 git clone https://github.com/nprasha76/GenAI
 
 cd philoagents-course/philoagents-api/
 
 pip install -r requirements.txt
-#Install Agents 
+###Install Agents 
 uv pip install external/rootAgentPro
 uv pip install external/savingsAgentPro
 uv pip install external/creditAgentPro
@@ -160,46 +160,47 @@ uv pip install external/travelAgentPro
 playwright install
 sudo playwright install-deps
 
-#Install faiss-gpu if you have GPU .Otherwise install faiss-cpu
+###Install faiss-gpu if you have GPU .Otherwise install faiss-cpu
 
 pip install faiss-cpu
 pi install  faiss-gpu
 
-#Launch FastAPI server
+###Launch FastAPI server
 
 python -m src.philoagents.infrastructure.api
 
-#Run UI 
-# Open another terminal (outside .venv) 
+###Run UI 
+### Open another terminal (outside .venv) 
 
 cd philoagents-course/philoagents-ui
 #Install node 
 https://nodejs.org/en/download
 
-#Launch UI
+###Launch UI
 npm run dev
 
 
-#Offline 
+###Offline 
 
-#Generate embeddings for each of agent .Repeat the below process for each agent
-#Go external/<Agent>Pro/src/chase_embeddings folder 
-#Modify the paths in createEmbeddings.py accordingly . Suggested to load Path location from .env file
-#Create embeddings
+###Generate embeddings for each of agent .Repeat the below process for each agent
+###Go external/<Agent>Pro/src/chase_embeddings folder 
+###Modify the paths in createEmbeddings.py accordingly . Suggested to load Path location from .env file
 
-#python createEmbeddings.py 
+###Create embeddings
+
+###python createEmbeddings.py 
 
 Modify *_meta.json to point to exact path of embeddings generated
 
 
-#Host model
+###Host model
 
-# Use appropriate model as per your system requirements .Adjust parameters accordingly
-#Install VLLM 
+### Use appropriate model as per your system requirements .Adjust parameters accordingly
+###Install VLLM 
 pip install --upgrade pip
 pip install vllm --no-cache-dir 
 
-#Launch VLLM with tool support
+###Launch VLLM with tool support
 python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
     --quantization gptq \
@@ -211,4 +212,5 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
