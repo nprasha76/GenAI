@@ -12,7 +12,7 @@
 ## 📖 Overview
 
 Multi-agent banking solution built with Google ADK, composed of a Master Agent and multiple vertical/domain Specialist Agents for banking products and services: credit cards, auto, mortgage, savings/checking, and travel. It covers offline data preparation, online inference flows, retrieval strategy, hosting, security, observability, and deployment.
-### 🎮 
+###  
 
 Design:
  - Master Agent routes user questions to the most relevant Specialist Agent using intent classification and tool availability.
@@ -22,17 +22,14 @@ Design:
     - Online: retrieve-augment-generate (RAG) with vLLM-hosted Llama 8B
 
 
-Interactive experience:
-
-<p align="center">
-    <img src="static/diagrams/system_architecture.png" alt="Architecture" width="600">
-</p>
-
-** Credits: HTML5 UI (Phaser framework) experience credits from https://github.com/neural-maze 
+Interactive experience 🎮:
 
 <p align="center">
     <img src="static/diagrams/ui_architecture.png" alt="Architecture" width="600">
 </p>
+
+** UI Credits: HTML5 UI (Phaser framework) experience credits from https://github.com/neural-maze 
+
 -------
 ## Components
 
@@ -219,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
