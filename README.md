@@ -129,7 +129,7 @@ https://docs.astral.sh/uv/getting-started/installation/
 Install git
 https://github.com/git-guides/install-git
 
-#Create virtual env .venv
+#### Create virtual env .venv
 uv venv .venv
 
 #Activate the created virtual environment 
@@ -139,7 +139,7 @@ source .venv/bin/activate
 
 ### Inside .venv , perform following :
 
-###Download the Repo
+### Download the Repo
 git clone https://github.com/nprasha76/GenAI
 
 cd philoagents-course/philoagents-api/
@@ -216,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
