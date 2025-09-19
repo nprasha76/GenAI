@@ -28,7 +28,7 @@ Interactive experience:
     <img src="static/diagrams/system_architecture.png" alt="Architecture" width="600">
 </p>
 
-**Credits: HTML5 UI (Phaser framework) experience credits from https://github.com/neural-maze 
+** Credits: HTML5 UI (Phaser framework) experience credits from https://github.com/neural-maze 
 
 <p align="center">
     <img src="static/diagrams/ui_architecture.png" alt="Architecture" width="600">
@@ -182,9 +182,13 @@ npm run dev
 
 ###Offline 
 
-###Generate embeddings for each of agent .Repeat the below process for each agent
-###Go external/<Agent>Pro/src/chase_embeddings folder 
-###Modify the paths in createEmbeddings.py accordingly . Suggested to load Path location from .env file
+### Generate embeddings for each of agent .Repeat the below process for each agent
+
+### cd external/<Agent>Pro/src/chase_embeddings folder 
+
+###Modify the paths in createEmbeddings.py accordingly . 
+
+Improvement :Load Path location from .env file
 
 ###Create embeddings
 
@@ -196,11 +200,14 @@ Modify *_meta.json to point to exact path of embeddings generated
 ###Host model
 
 ### Use appropriate model as per your system requirements .Adjust parameters accordingly
+
 ###Install VLLM 
+
 pip install --upgrade pip
 pip install vllm --no-cache-dir 
 
 ###Launch VLLM with tool support
+
 python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
     --quantization gptq \
@@ -212,5 +219,6 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
