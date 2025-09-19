@@ -168,18 +168,18 @@ Interactive experience 🎮:
 
 ### Run UI 
  #### 
-  #Open another terminal (outside .venv) 
-   cd philoagents-course/philoagents-ui
-   #Install node 
-   https://nodejs.org/en/download
+   #Open another terminal (outside .venv) 
+    cd philoagents-course/philoagents-ui
+    #Install node 
+    https://nodejs.org/en/download
   
-   ### Launch UI
+### Launch UI
    npm run dev
   
 
-###Offline 
+### Offline 
 
-### Generate embeddings for each of agent .Repeat the below process for each agent
+#### Generate embeddings for each of agent .Repeat the below process for each agent
 
 #### 
      cd external/<Agent>Pro/src/chase_embeddings folder 
@@ -219,6 +219,7 @@ Interactive experience 🎮:
 
 
 </p>
+
 
 
 
