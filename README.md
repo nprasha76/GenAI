@@ -200,12 +200,12 @@ Improvement :Load Path location from .env file
 
 #### Install VLLM 
 
-#pip install --upgrade pip
-#pip install vllm --no-cache-dir 
+##### pip install --upgrade pip
+##### pip install vllm --no-cache-dir 
 
 #### Launch VLLM with tool support
 
-python -m vllm.entrypoints.openai.api_server \
+##### python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
     --quantization gptq \
     --max-model-len 2048 \
@@ -216,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
