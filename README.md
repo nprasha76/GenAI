@@ -121,7 +121,7 @@ Interactive experience 🎮:
 
 5) Response returns via Master to UI
 
-##Installation instructions:   
+## Installation instructions:   
 
 Install uv in your current working directory:
 https://docs.astral.sh/uv/getting-started/installation/
@@ -216,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
