@@ -122,18 +122,18 @@ Interactive experience 🎮:
 5) Response returns via Master to UI
 
 ## Installation instructions:   
-
-Install uv in your current working directory:
-https://docs.astral.sh/uv/getting-started/installation/
-
-Install git
-https://github.com/git-guides/install-git
-
-#### Create virtual env .venv
-uv venv .venv
-
-#Activate the created virtual environment 
-source .venv/bin/activate
+####
+  Install uv in your current working directory:
+  https://docs.astral.sh/uv/getting-started/installation/
+  
+  Install git
+  https://github.com/git-guides/install-git
+  
+  #### Create virtual env .venv
+  uv venv .venv
+  
+  #Activate the created virtual environment 
+  source .venv/bin/activate
 
 
 
@@ -181,17 +181,18 @@ npm run dev
 
 ### Generate embeddings for each of agent .Repeat the below process for each agent
 
-#### cd external/<Agent>Pro/src/chase_embeddings folder 
+#### 
+     cd external/<Agent>Pro/src/chase_embeddings folder 
 
-####Modify the paths in createEmbeddings.py accordingly . 
+     #### Modify the paths in createEmbeddings.py accordingly . 
 
-Improvement :Load Path location from .env file
+     Improvement :Load Path location from .env file
 
-####Create embeddings
+     #### Create embeddings
 
-####python createEmbeddings.py 
+     #### python createEmbeddings.py 
 
-####Modify *_meta.json to point to exact path of embeddings generated
+     #### Modify *_meta.json to point to exact path of embeddings generated
 
 
 ### Host model
@@ -200,12 +201,14 @@ Improvement :Load Path location from .env file
 
 #### Install VLLM 
 
-##### pip install --upgrade pip
-##### pip install vllm --no-cache-dir 
+##### 
+      pip install --upgrade pip
+      pip install vllm --no-cache-dir 
 
 #### Launch VLLM with tool support
 
-##### python -m vllm.entrypoints.openai.api_server \
+##### 
+     python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
     --quantization gptq \
     --max-model-len 2048 \
@@ -216,6 +219,7 @@ Improvement :Load Path location from .env file
 
 
 </p>
+
 
 
 
