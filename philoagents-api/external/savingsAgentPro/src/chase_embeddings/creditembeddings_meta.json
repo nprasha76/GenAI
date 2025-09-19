@@ -1,0 +1,8 @@
+{
+  "embeddings_file": "/home/pnanda/chase_embeddings/creditembeddings.npy",
+  "chunks_file": "/home/pnanda/chase_embeddings/creditembeddings_chunks.json",
+  "model": "all-MiniLM-L6-v2",
+  "created_at": 1757987531,
+  "n_vectors": 27,
+  "dim": 384
+}

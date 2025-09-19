@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "chase-embeddings"
+version = "0.1.0"
+description = "A project to download content from Chase, convert it to markdown, and create vector embeddings."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+crawl4ai = "^0.1.0"
+sentence-transformers = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

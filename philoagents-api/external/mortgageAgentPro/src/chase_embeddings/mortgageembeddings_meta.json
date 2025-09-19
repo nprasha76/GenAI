@@ -1,0 +1,8 @@
+{
+  "embeddings_file": "/home/pnanda/chase_embeddings/mortgageembeddings.npy",
+  "chunks_file": "/home/pnanda/chase_embeddings/mortgageembeddings_chunks.json",
+  "model": "all-MiniLM-L6-v2",
+  "created_at": 1757987524,
+  "n_vectors": 12,
+  "dim": 384
+}

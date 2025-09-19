@@ -1,0 +1,8 @@
+{
+  "embeddings_file": "/home/pnanda/chase_embeddings/src/travelembeddings.npy",
+  "chunks_file": "/home/pnanda/chase_embeddings/travelembeddings_chunks.json",
+  "model": "all-MiniLM-L6-v2",
+  "created_at": 1757987533,
+  "n_vectors": 8,
+  "dim": 384
+}

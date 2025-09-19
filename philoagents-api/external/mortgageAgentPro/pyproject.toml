@@ -1,0 +1,19 @@
+[project]
+name = "mortgageAgentPro"
+version = "0.1.0"
+description = "A RAG agent for savings account queries"
+authors = [{ name = "Your Name", email = "your@email.com" }]
+dependencies = [
+    "litellm",
+    "python-dotenv",
+    "sentence-transformers",
+    "google.adk"
+    # add other dependencies as needed
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
