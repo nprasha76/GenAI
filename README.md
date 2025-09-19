@@ -169,14 +169,14 @@ pi install  faiss-gpu
 
 python -m src.philoagents.infrastructure.api
 
-###Run UI 
-### Open another terminal (outside .venv) 
+### Run UI 
+#### Open another terminal (outside .venv) 
 
 cd philoagents-course/philoagents-ui
 #Install node 
 https://nodejs.org/en/download
 
-###Launch UI
+### Launch UI
 npm run dev
 
 
@@ -197,16 +197,16 @@ Improvement :Load Path location from .env file
 Modify *_meta.json to point to exact path of embeddings generated
 
 
-###Host model
+### Host model
 
 ### Use appropriate model as per your system requirements .Adjust parameters accordingly
 
-###Install VLLM 
+### Install VLLM 
 
 pip install --upgrade pip
 pip install vllm --no-cache-dir 
 
-###Launch VLLM with tool support
+### Launch VLLM with tool support
 
 python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
@@ -219,6 +219,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
