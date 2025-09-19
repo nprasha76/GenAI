@@ -194,14 +194,14 @@ Improvement :Load Path location from .env file
 Modify *_meta.json to point to exact path of embeddings generated
 
 
-### Host model
+#### Host model
 
-### Use appropriate model as per your system requirements .Adjust parameters accordingly
+#### Use appropriate model as per your system requirements .Adjust parameters accordingly
 
-### Install VLLM 
+#### Install VLLM 
 
-pip install --upgrade pip
-pip install vllm --no-cache-dir 
+#pip install --upgrade pip
+#pip install vllm --no-cache-dir 
 
 ### Launch VLLM with tool support
 
@@ -216,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
