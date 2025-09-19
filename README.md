@@ -6,7 +6,7 @@
 </br>
 
 <p align="center">
-    <img src="static/diagrams/system_architecture.png" alt="Architecture" width="600">
+    <img src="static/diagrams/system_architecture.svg" alt="Architecture" width="600">
 </p>
 
 ## 📖 Overview
@@ -219,6 +219,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
