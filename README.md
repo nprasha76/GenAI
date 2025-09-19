@@ -181,20 +181,20 @@ npm run dev
 
 ### Generate embeddings for each of agent .Repeat the below process for each agent
 
-### cd external/<Agent>Pro/src/chase_embeddings folder 
+#### cd external/<Agent>Pro/src/chase_embeddings folder 
 
-###Modify the paths in createEmbeddings.py accordingly . 
+####Modify the paths in createEmbeddings.py accordingly . 
 
 Improvement :Load Path location from .env file
 
-###Create embeddings
+####Create embeddings
 
-###python createEmbeddings.py 
+####python createEmbeddings.py 
 
-Modify *_meta.json to point to exact path of embeddings generated
+####Modify *_meta.json to point to exact path of embeddings generated
 
 
-#### Host model
+### Host model
 
 #### Use appropriate model as per your system requirements .Adjust parameters accordingly
 
@@ -203,7 +203,7 @@ Modify *_meta.json to point to exact path of embeddings generated
 #pip install --upgrade pip
 #pip install vllm --no-cache-dir 
 
-### Launch VLLM with tool support
+#### Launch VLLM with tool support
 
 python -m vllm.entrypoints.openai.api_server \
     --model TechxGenus/Meta-Llama-3-8B-Instruct-GPTQ\
@@ -216,6 +216,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 
 </p>
+
 
 
 
