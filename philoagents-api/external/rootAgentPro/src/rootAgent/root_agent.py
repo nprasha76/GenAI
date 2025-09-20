@@ -12,41 +12,53 @@ from chase_embeddings.src.faissembeddings import load_faiss_index, query_embeddi
 from chase_embeddings.src.embeddings import load_embeddings_from_meta
 from google.adk.sessions import InMemorySessionService
 from google.adk.runners import Runner
+from creditAgent.credit_agent import CreditRAGAgent
+from mortgageAgent.mortgage_agent import MortgageRAGAgent
+from autoAgent.auto_agent import AutoRAGAgent
+from savingsAgent.savings_agent import SavingsRAGAgent
+from travelAgent.travel_agent import TravelRAGAgent 
+
+
+           
 
 class RootAgent:
     
-    async def creditAgent(query: str) -> str:
-
-            from creditAgent.credit_agent import CreditRAGAgent
+    async def creditAgent(self,query: str) -> str:
+       try:
+            #from creditAgent.credit_agent import CreditRAGAgent
+            print("In creditAgent method of RootAgent")
             agent = CreditRAGAgent()
             context = await agent.run_query(query)
             result = agent.get_final_answer(query, context)
             return result
-        
-    async def mortgageAgent(query: str) -> str:
+       except Exception as e:
+           print(f"Error in creditAgent method of RootAgent: {e}")
+           return "Sorry, I couldn't process your request."
 
-            from mortgageAgent.mortgage_agent import MortgageRAGAgent
+    async def mortgageAgent(self,query: str) -> str:
+
+            #from mortgageAgent.mortgage_agent import MortgageRAGAgent
             agent = MortgageRAGAgent()
             context = await agent.run_query(query)
             result = agent.get_final_answer(query, context)
             return result
-    async def autoAgent(query: str) -> str:
+    async def autoAgent(self,query: str) -> str:
 
-            from autoAgent.auto_agent import AutoRAGAgent
+            #from autoAgent.auto_agent import AutoRAGAgent
             agent = AutoRAGAgent()
             context = await agent.run_query(query)
             result = agent.get_final_answer(query, context)
             return result
     async def checkingAgent(self,query: str) -> str:
 
-            from savingsAgent.savings_agent import SavingsRAGAgent
+            #from savingsAgent.savings_agent import SavingsRAGAgent
             agent = SavingsRAGAgent()
             context = await agent.run_query(query)
             result = agent.get_final_answer(query, context)
             return result   
     
-    async def travelAgent(query: str) -> str:
-            from travelAgent.travel_agent import TravelRAGAgent
+    async def travelAgent(self,query: str) -> str:
+            #from travelAgent.travel_agent import TravelRAGAgent
             agent = TravelRAGAgent()
             context = await agent.run_query(query)
             result = agent.get_final_answer(query, context)
@@ -160,7 +172,7 @@ class RootAgent:
             resp = await self.mortgageAgent(rag_query)
             print("Final Result from mortgageAgent", resp)
         elif context.__contains__("creditAgent"):
-            print("Delegated to creditAgent")
+            print("Delegated to external creditAgent")
             resp = await self.creditAgent(rag_query)
             print("Final Result from creditAgent", resp)
         elif context.__contains__("travelAgent"):
