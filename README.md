@@ -142,7 +142,7 @@ Interactive experience 🎮:
      #Download the Repo
      git clone https://github.com/nprasha76/GenAI
     
-     cd philoagents-course/philoagents-api/
+     cd philoagents-api/
   
      pip install -r requirements.txt
      ###Install Agents 
@@ -219,6 +219,7 @@ Interactive experience 🎮:
 
 
 </p>
+
 
 
 
