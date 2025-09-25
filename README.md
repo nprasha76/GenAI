@@ -143,6 +143,7 @@ Interactive experience 🎮:
      git clone https://github.com/nprasha76/GenAI
     
      cd philoagents-api/
+     uv pip install -e .
      
      ###Install Agents 
       uv pip install external/rootAgentPro
@@ -220,6 +221,7 @@ Interactive experience 🎮:
 
 
 </p>
+
 
 
 
