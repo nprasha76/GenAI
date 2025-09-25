@@ -143,8 +143,7 @@ Interactive experience 🎮:
      git clone https://github.com/nprasha76/GenAI
     
      cd philoagents-api/
-  
-     pip install -r requirements.txt
+     
      ###Install Agents 
       uv pip install external/rootAgentPro
       uv pip install external/savingsAgentPro
@@ -152,6 +151,8 @@ Interactive experience 🎮:
       uv pip install external/autoAgentPro
       uv pip install external/mortgageAgentPro
       uv pip install external/travelAgentPro
+      
+      pip install -r external/travelAgentPro/src/chase_embeddings/requirements.txt 
       
     
     playwright install
@@ -219,6 +220,7 @@ Interactive experience 🎮:
 
 
 </p>
+
 
 
 
