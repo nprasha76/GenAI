@@ -195,6 +195,7 @@ Interactive experience 🎮:
      #### python createEmbeddings.py 
 
      #### Modify *_meta.json to point to exact path of embeddings generated
+     #### Modify adk_tools.py to point to respective *_meta.json and *_faiss.index path 
 
 
 ### Host model
@@ -221,6 +222,7 @@ Interactive experience 🎮:
 
 
 </p>
+
 
 
 
